@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Dashboard</title>
+    <link rel="stylesheet" href="style1.css" />
+    <link rel="stylesheet" href="style.css">
+    <!-- Boxicons CSS -->
+    <link flex href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet" />
+    <script src="script1.js" defer></script>
+  </head>
+  <body>
+    <nav class="sidebar locked">
+      <div class="logo_items flex">
+        <span class="nav_image">
+          <img src="images/white_logo.png" alt="logo_img" />
+        </span>
+        <span class="logo_name">GalaxiETS</span>
+        <i class="bx bx-lock-alt" id="lock-icon" title="Unlock Sidebar"></i>
+        <i class="bx bx-x" id="sidebar-close"></i>
+      </div>
+
+      <div class="menu_container">
+        <div class="menu_items">
+          <ul class="menu_item">
+            <div class="menu_title flex">
+              <span class="title">Main</span>
+              <span class="line"></span>
+            </div>
+            <li class="item">
+              <a href="dashboard.html" class="link flex">
+                <i class="bx bx-home-alt"></i>
+                <span>DashBoard</span>
+              </a>
+            </li>
+          
+          </ul>
+
+          <ul class="menu_item">
+            <div class="menu_title flex">
+              <span class="title">Storing</span>
+              <span class="line"></span>
+            </div>
+            <li class="item">
+              <a href="companydata.html" class="link flex"> 
+               
+                <i class='bx bx-notepad'></i>
+                <span>Company Data</span>
+              </a>
+            </li>
+            <li class="item">
+              <a href="customerdata.html" class="link flex">
+                <i class="bx bx-folder"></i>
+                
+                <span>Customer Data</span>
+              </a>
+            </li>
+            <li class="item">
+              <a href="projectdata.html" class="link flex">
+                <i class='bx bxs-message-square-detail'></i>
+              
+                <span>Project Data</span>
+              </a>
+            </li>
+          </ul>
+
+          <ul class="menu_item">
+            <div class="menu_title flex">
+              <span class="title">Generator</span>
+              <span class="line"></span>
+            </div>
+            <li class="item">
+              <a href="quotation.html" class="link flex">
+                <i class='bx bxs-notepad'></i>
+                <span>Quotation</span>
+              </a>
+            </li>
+            <li class="item">
+              <a href="pogenerator.html" class="link flex">
+                <i class="bx bx-grid-alt"></i>
+             
+                <span>PO</span>
+              </a>
+            </li>
+            <li class="item">
+              <a href="invoice.html" class="link flex">
+                <i class='bx bxs-receipt' ></i>
+                <span>Invoice</span>
+              </a>
+            </li>
+          </ul>
+
+          <ul class="menu_item">
+            <div class="menu_title flex">
+              <span class="title">Upload</span>
+              <span class="line"></span>
+            </div>
+            <li class="item">
+              <a href="po.html" class="link flex">
+                <i class="bx bx-cloud-upload"></i>
+                <span>PO</span>
+              </a>
+            </li>
+          </ul>
+          <ul class="menu_item">
+            <div class="menu_title flex">
+              <span class="title">Closure</span>
+              <span class="line"></span>
+            </div>
+            <li class="item">
+              <a href="payments.html" class="link flex">
+                <i class='bx bx-credit-card'></i>
+                <span>Payments</span>
+              </a>
+            </li>
+            <li class="item">
+              <a href="trackers.html" class="link flex">
+                <i class='bx bx-line-chart'></i>
+                <span>Tracker</span>
+              </a>
+            </li>
+            <li class="item">
+              <a href="close.html" class="link flex">
+                <i class='bx bx-x'></i>
+                <span>Close</span>
+              </a>
+            </li>
+          </ul>
+        </div>
+        <div class="sidebar_profile">
+          <div class="nav_image">
+            <img src="images/adminprofile.jpg" alt="logo_img"/>
+            <span class="name">Admin</span>
+          </div>
+            <div class="out">
+              <a href="signin.html" class="log-out">
+                <i class='bx bx-log-out'></i>
+   </a> </div>
+          </div>  
+        </div>
+        
+      </div>
+    </nav>
+
+
+      
+    <main>
+      <div class="form-container">
+      <h1>Dashboard</h1>
+      <br>
+      <div class="container">
+      <h1 class="red-heading">Store Info</h1>
+      
+        <!-- Buttons to the right of "Quotations" -->
+        <div class="button-row">
+          
+          <a href="companydata.html"><button class="button" style="vertical-align:middle"><span>Company</span></button></a>
+          <a href="customerdata.html"><button class="button" style="vertical-align:middle"><span>Customer</span></button></a>
+          <a href="projectdata.html"> <button class="button" style="vertical-align:middle"><span>Project</span></button></a>
+        </div>
+        <br>
+        <h1 class="red-heading">Generator</h1>
+        <div class="button-row">
+          <a href="quotation.html"><button class="button" style="vertical-align:middle"><span>Quotation</span></button></a>
+          <a href="pogenerator.html"><button class="button" style="vertical-align:middle"><span>PO</span></button></a>
+          <a href="invoice.html"> <button class="button" style="vertical-align:middle"><span>Invoice</span></button></a>
+          </div><br>
+          <h1 class="red-heading">Closure</h1>
+          <div class="button-row">
+            <a href="payments.html"><button class="button" style="vertical-align:middle"><span>Payments</span></button></a>
+  
+            <a href="trackers.html"><button class="button" style="vertical-align:middle"><span>Tracker</span></button></a>
+            
+            <a href="close.html"><button class="button" style="vertical-align:middle"><span>Close</span></button></a>
+          </div>
+          <br>
+        <h1 class="red-heading">Upload</h1>
+        <div class="button-row">
+        
+          <a href="po.html"><button class="button" style="vertical-align:middle"><span>PO</span></button></a>
+   
+          </div>
+    
+          
+        
+        </form>
+            </div>
+   </div>
+  </section>
+      <p class="copyright">
+        &copy; 2024 - <span>GALAXIETS</span> All Rights Reserved.
+      </p>
+    </main>
+  
+    <script src="script.js"></script>
+  </body>
+  
+  </html>

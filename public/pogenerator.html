@@ -1,0 +1,533 @@
+<!DOCTYPE html>
+
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Dashboard</title>
+    <link rel="stylesheet" href="style1.css" />
+    <link rel="stylesheet" href="style.css">
+    <!-- Boxicons CSS -->
+    <link flex href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet" />
+    <script src="script1.js" defer></script>
+  </head>
+  <body>
+    <nav class="sidebar locked">
+      <div class="logo_items flex">
+        <span class="nav_image">
+          <img src="images/white_logo.png" alt="logo_img" />
+        </span>
+        <span class="logo_name">GalaxiETS</span>
+        <i class="bx bx-lock-alt" id="lock-icon" title="Unlock Sidebar"></i>
+        <i class="bx bx-x" id="sidebar-close"></i>
+      </div>
+
+      <div class="menu_container">
+        <div class="menu_items">
+          <ul class="menu_item">
+            <div class="menu_title flex">
+              <span class="title">Main</span>
+              <span class="line"></span>
+            </div>
+            <li class="item">
+              <a href="dashboard.html" class="link flex">
+                <i class="bx bx-home-alt"></i>
+                <span>DashBoard</span>
+              </a>
+            </li>
+          
+          </ul>
+
+          <ul class="menu_item">
+            <div class="menu_title flex">
+              <span class="title">Storing</span>
+              <span class="line"></span>
+            </div>
+            <li class="item">
+              <a href="companydata.html" class="link flex"> 
+               
+                <i class='bx bx-notepad'></i>
+                <span>Company Data</span>
+              </a>
+            </li>
+            <li class="item">
+              <a href="customerdata.html" class="link flex">
+                <i class="bx bx-folder"></i>
+                
+                <span>Customer Data</span>
+              </a>
+            </li>
+            <li class="item">
+              <a href="projectdata.html" class="link flex">
+                <i class='bx bxs-message-square-detail'></i>
+              
+                <span>Project Data</span>
+              </a>
+            </li>
+          </ul>
+
+          <ul class="menu_item">
+            <div class="menu_title flex">
+              <span class="title">Generator</span>
+              <span class="line"></span>
+            </div>
+            <li class="item">
+              <a href="quotation.html" class="link flex">
+                <i class='bx bxs-notepad'></i>
+                <span>Quotation</span>
+              </a>
+            </li>
+            <li class="item">
+              <a href="pogenerator.html" class="link flex">
+                <i class="bx bx-grid-alt"></i>
+             
+                <span>PO</span>
+              </a>
+            </li>
+            <li class="item">
+              <a href="invoice.html" class="link flex">
+                <i class='bx bxs-receipt' ></i>
+                <span>Invoice</span>
+              </a>
+            </li>
+          </ul>
+
+          <ul class="menu_item">
+            <div class="menu_title flex">
+              <span class="title">Upload</span>
+              <span class="line"></span>
+            </div>
+            <li class="item">
+              <a href="po.html" class="link flex">
+                <i class="bx bx-cloud-upload"></i>
+                <span>PO</span>
+              </a>
+            </li>
+          </ul>
+          <ul class="menu_item">
+            <div class="menu_title flex">
+              <span class="title">Closure</span>
+              <span class="line"></span>
+            </div>
+            <li class="item">
+              <a href="payments.html" class="link flex">
+                <i class='bx bx-credit-card'></i>
+                <span>Payments</span>
+              </a>
+            </li>
+            <li class="item">
+              <a href="trackers.html" class="link flex">
+                <i class='bx bx-line-chart'></i>
+                <span>Tracker</span>
+              </a>
+            </li>
+            <li class="item">
+              <a href="close.html" class="link flex">
+                <i class='bx bx-x'></i>
+                <span>Close</span>
+              </a>
+            </li>
+          </ul>
+        </div>
+        <div class="sidebar_profile">
+          <div class="nav_image">
+            <img src="images/adminprofile.jpg" alt="logo_img"/>
+            <span class="name">Admin</span>
+          </div>
+            <div class="out">
+              <a href="signin.html" class="log-out">
+                <i class='bx bx-log-out'></i>
+   </a> </div>
+          </div>  
+        </div>
+        
+      </div>
+    </nav>
+
+
+      
+    <main>
+        <div class="notice">
+            <p>🚧 This page is a work in progress. The backend will be updated in version 2. 🚧</p>
+          </div>
+        <br>
+        <div class="form-container">
+            <h1>PO Generator</h1>
+    <form action="#" class="form"> 
+    <div class="container1">
+    <header>Vendor</header>
+      <div class="input-box">
+        <label>Name</label>
+        <input type="text" name="Name" placeholder="Enter Name" required />
+      </div>
+      <div class="input-box">
+        <label>Company Name</label>
+        <input type="text" name="companyName" placeholder="Enter Company Name" required />
+      </div>
+      <div class="input-box">
+        <label>Address</label>
+        <input type="text" name="address" placeholder="Enter Address" required />
+      </div>
+      <div class="input-box">
+        <label>Phone</label>
+        <input type="text" name="phone" placeholder="Enter Phone" required />
+      </div>
+      <div class="input-box">
+        <label>Email Address</label>
+        <input type="text" name="emailadress" placeholder="Email Address" required />
+      </div>
+      <br>
+      <br> 
+      </div>
+      <br>
+      <br>          
+          <div class="container1">
+          <header>Ship To</header>
+      <div class="input-box">
+        <label>Name</label>
+        <input type="text" name="name1" placeholder="Enter Name" required />
+      </div>
+      <div class="input-box">
+        <label>Company Name</label>
+        <input type="text" name="companyName1" placeholder="Enter Company Name" required />
+      </div>
+      <div class="input-box">
+        <label>Address</label>
+        <input type="text" name="address1" placeholder="Enter Address" required />
+      </div>
+      <div class="input-box">
+        <label>Phone</label>
+        <input type="text" name="phone1" placeholder="Enter Phone" required />
+      </div>
+      <div class="input-box">
+        <label>Email Address</label>
+        <input type="text" name="email1" placeholder="Email Address" required />
+      </div>
+        </div><br>
+      
+      
+  
+    <div class="container2">
+    <h3>Items</h3><br>
+      <div id="itemsContainer">
+        <div class="itemRow">
+          <table class="grey-table">
+            <thead>
+              <tr>
+          <th >Item Description</th>
+          <th><select class="quantityType" required>
+            <option value="workingTime">Working time in hrs</option>
+            <option value="totalUnits">Total number of units</option>
+        </select></th>
+          <th><select class="priceType" required>
+            <option value="pricePerHour">Price Per Hour</option>
+            <option value="unitPrice">Unit Price</option>
+        </select></th>
+          
+        </tr>
+        <tr>
+            <td><input type="text" class="itemDescription" placeholder="Enter Description" required></td>
+            <td><input type="number" class="workingTime" placeholder="Enter Value" required></td>
+            <td><input type="number" class="Priceperhour" placeholder="Enter Value" required></td>
+            <td><button class="deleteItem">❌</button></td> <!-- Delete button -->
+          </tr>
+        </thead>
+        </table>
+        </div>
+      </div>
+      </div>
+      <br>
+      <div class="button-container" style="text-align: center;">
+      <a href="javascript:history.back()" button type="button" class="largeButton3" style="height: 25px; font-size: 0.9rem;">Back</a>
+      <button type="button" class="largeButton" style="height: 25px; font-size: 0.9rem;" id="addItem">Add Item</button>
+      <button type="button" class="largeButton2" style="height: 25px; font-size: 0.9rem;" id="generateQuotation">Generate Quotation</button>
+      <button type="submit" class="largeButton1" style="height: 25px; font-size: 0.9rem;">Save</button>
+     
+</div>
+    </form>
+  </div>
+</div>
+<div id="POPreview" style="display: none;">
+    <h3>PO Preview</h3>
+    <div id="POContent"></div>
+    <button type="button" id="downloadPO"  disabled>Download PO</button>
+    </div>
+    
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.4.0/jspdf.umd.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/html2pdf.js/0.9.3/html2pdf.bundle.js"></script>
+    
+    <script>
+    
+    document.addEventListener('DOMContentLoaded', function () {
+      let itemCount = 1;
+      let version = 1;
+    
+      document.getElementById('addItem').addEventListener('click', function () {
+        addItemRow();
+      });
+    
+    document.querySelectorAll('.deleteItem').forEach(button => {
+      button.addEventListener('click', function() {
+        this.closest('tr').remove(); // Remove the parent row of the clicked delete button
+      });
+    });
+    
+      document.getElementById('generatePO').addEventListener('click', function () {
+        generatePO();
+      });
+    
+    
+    
+    
+      function addItemRow() {
+      const itemsContainer = document.getElementById('itemsContainer');
+    
+      const itemRow = document.createElement('tr');
+      
+      const itemDescriptionCell = document.createElement('td');
+      const itemDescriptionInput = document.createElement('input');
+      itemDescriptionInput.type = 'text';
+      itemDescriptionInput.classList.add('itemDescription');
+      itemDescriptionInput.placeholder = 'Enter Description';
+      itemDescriptionInput.required = true;
+      itemDescriptionCell.appendChild(itemDescriptionInput);
+      
+      const quantityTypeCell = document.createElement('td');
+      const quantityTypeSelect = document.createElement('select');
+      quantityTypeSelect.classList.add('quantityType');
+      quantityTypeSelect.required = true;
+      const workingTimeOption = document.createElement('option');
+      workingTimeOption.value = 'workingTime';
+      workingTimeOption.textContent = 'Working time in hrs';
+      const totalUnitsOption = document.createElement('option');
+      totalUnitsOption.value = 'totalUnits';
+      totalUnitsOption.textContent = 'Total number of units';
+      quantityTypeSelect.appendChild(workingTimeOption);
+      quantityTypeSelect.appendChild(totalUnitsOption);
+      quantityTypeCell.appendChild(quantityTypeSelect);
+    
+      const priceTypeCell = document.createElement('td');
+      const priceTypeSelect = document.createElement('select');
+      priceTypeSelect.classList.add('priceType');
+      priceTypeSelect.required = true;
+      const pricePerHourOption = document.createElement('option');
+      pricePerHourOption.value = 'pricePerHour';
+      pricePerHourOption.textContent = 'Price Per Hour';
+      const unitPriceOption = document.createElement('option');
+      unitPriceOption.value = 'unitPrice';
+      unitPriceOption.textContent = 'Unit Price';
+      priceTypeSelect.appendChild(pricePerHourOption);
+      priceTypeSelect.appendChild(unitPriceOption);
+      priceTypeCell.appendChild(priceTypeSelect);
+      
+      const workingTimeCell = document.createElement('td');
+      const workingTimeInput = document.createElement('input');
+      workingTimeInput.type = 'number';
+      workingTimeInput.classList.add('workingTime');
+      workingTimeInput.placeholder = 'Enter Value';
+      workingTimeInput.required = true;
+      workingTimeCell.appendChild(workingTimeInput);
+      
+      const PriceperhourCell = document.createElement('td');
+      const PriceperhourInput = document.createElement('input');
+      PriceperhourInput.type = 'number';
+      PriceperhourInput.classList.add('Priceperhour');
+      PriceperhourInput.placeholder = 'Enter Value';
+      PriceperhourInput.required = true;
+      PriceperhourCell.appendChild(PriceperhourInput);
+    
+      const deleteCell = document.createElement('td');
+        const deleteButton = document.createElement('button');
+        deleteButton.textContent = '❌';
+        deleteButton.classList.add('deleteItem');
+        deleteButton.addEventListener('click', function() {
+          itemRow.remove(); // Remove the entire row when delete button is clicked
+        });
+        deleteCell.appendChild(deleteButton);
+      
+      itemRow.appendChild(itemDescriptionCell);
+      itemRow.appendChild(quantityTypeCell);
+      itemRow.appendChild(priceTypeCell);
+      itemRow.appendChild(workingTimeCell);
+      itemRow.appendChild(PriceperhourCell);
+      itemRow.appendChild(deleteCell);
+    
+      itemsContainer.appendChild(itemRow);
+    
+      itemCount++;
+    }
+    
+    
+    function generatePO() {
+        //  Retrieve Vendor values
+    const vendor = {
+        Name: document.querySelector('input[placeholder="Enter Name"]').value,
+        companyName: document.querySelector('input[placeholder="Enter Company Name"]').value,
+        address: document.querySelector('input[placeholder="Enter Address"]').value,
+        phone: document.querySelector('input[placeholder="Enter Phone"]').value,
+        emailadress : document.querySelector('input[placeholder="Email Address"]').value,
+    };
+
+    // Retrieve Ship To values
+    const shipTo = {
+        name1: document.querySelector('input[placeholder="Enter Name"]').value,
+        companyName1: document.querySelector('input[placeholder="Enter Company Name"]').value,
+        address1: document.querySelector('input[placeholder="Enter Address"]').value,
+        phone1: document.querySelector('input[placeholder="Enter Phone"]').value,
+        emailadress1 : document.querySelector('input[placeholder="Email Address"]').value,
+    };
+        // Retrieve values from item rows
+        const itemDescriptions = document.querySelectorAll('.itemDescription');
+        const itemQuantities = document.querySelectorAll('.workingTime');
+        const Priceperhours = document.querySelectorAll('.Priceperhour');
+    
+        let POContent = '';
+    
+        POContent += `
+            <h3 style="color: red;" class="calibri-font flex-container">
+              <span class="logo" style="margin-right: 10px; float: left;"><img src="new_logo.png" height="55" width="55"></span>
+    <br>
+              <span class="logo-container" style="display:flex; align-items:center;">Galaxi Engineering Technology Services Private Limited</span>
+            <div class="invoice-container2">
+            <div class="right-column">
+            <br>
+            <p class="supply1">No. 812 Ammachettipudur, Pasur, <br>Coimbatore, Tamil Nadu, India, 641653 <br> +919789779925<br>info@galaxiets.com.<br>www.galaxiets.com</p><br<br>
+            </h3>
+            </div>
+            </div>
+            
+            `;
+    
+        // Add the Quotation header
+    POContent += `
+        <div class="Quotation-container1">
+            <table style="width: 100%;">
+                <tr>
+                    <td style="width: 50%; vertical-align: top; border: 1px solid #000; padding: 5px; text-align: left;">
+                        <p class="Name" style="margin-bottom: 10px;">To: ${Name}</p>
+                        <p class="Company Name" style="margin-bottom: 10px;">Company: ${companyName}</p>
+                        <p class="Address" style="margin-bottom: 10px;">Address: ${address}</p>
+                        <p class="Phone" style="margin-bottom: 10px;">Phone: ${phone}</p>
+                        <p class="Email" style="margin-bottom: 10px;">Email: ${emailaddress}</p>
+                    </td>
+                    <td style="width: 50%; vertical-align: top; border: 1px solid #000; padding: 5px; text-align: left;">
+                        <p class="Ship To Name" style="margin-bottom: 10px;">Ship To: ${name1}</p>
+                        <p class="Company Name" style="margin-bottom: 10px;">Company: ${companyName1}</p>
+                        <p class="Address" style="margin-bottom: 10px;">Address: ${address1}</p>
+                        <p class="Phone" style="margin-bottom: 10px;">Phone: ${phone1}</p>
+                        <p class="Email" style="margin-bottom: 10px;">Email: ${email1}</p>
+                    </td>
+                </tr>
+            </table>
+        </div>
+    `;
+    
+        // Quotation items
+        POContent += `
+            <br>
+            <table>
+            <thead>
+                <tr>
+                    <th>S.No</th>
+                    <th>Description</th>
+                    <th>Working time in hrs</th>
+                    <th>Price Per Hour</th>
+                    <th>Total</th>
+                </tr>
+            </thead>
+            <tbody>
+        `;
+    
+        let totalAmount = 0;
+        let serialNumber = 1;
+    
+        for (let i = 0; i < itemDescriptions.length; i++) {
+            const description = itemDescriptions[i].value;
+            const workingTime = parseFloat(itemQuantities[i].value);
+            const price = parseFloat(Priceperhours[i].value);
+    
+            const total = workingTime * price;
+            const itemTotal = total;
+            const formattedItemTotal = 'Rs. ' + itemTotal.toFixed(2);
+    
+            POContent += `
+                <tr>
+                    <td>${serialNumber}</td>
+                    <td>${description}</td>
+                    <td>${workingTime}</td>
+                    <td>${price}</td>
+                    <td>${formattedItemTotal}</td>
+                </tr>
+            `;
+    
+            totalAmount += itemTotal;
+            serialNumber++;
+        }
+    
+        POContent += `
+            </tbody>
+            </table>
+        `;
+    
+    
+        // Quotation total
+        POContent += `
+            <br>
+            <h3 class="right">Total Amount: Rs. ${totalAmount.toFixed(2)}</h3>
+        `;
+    
+        const POPreview = document.getElementById('POPreview');
+        const POPreviewContent = document.getElementById('POContent'); // Update this line
+        const downloadPOButton = document.getElementById('downloadPO');
+    
+        POPreviewContent.innerHTML = POContent;
+        POPreview.style.display = 'block';
+    
+        downloadPOButton.disabled = false;
+        downloadPOButton.addEventListener('click', function() {
+            downloadPO();
+        });
+    
+        function downloadPO() {
+            const POElement = document.getElementById('POContent');
+            
+            const currentDate = new Date(); // Corrected line
+            const monthNames = [
+                'January', 'February', 'March', 'April', 'May', 'June',
+                'July', 'August', 'September', 'October', 'November', 'December'
+            ];
+            const currentMonth = monthNames[currentDate.getMonth()];
+            const currentYear = currentDate.getFullYear();
+            const pdfFileName = `${currentMonth}_${version}.pdf`;
+            version++;
+    
+            html2pdf()
+                .from(POElement)
+                .save(pdfFileName);
+        }
+    }
+    });
+    
+
+    
+    </script>
+     
+    <p class="copyright">
+      &copy; 2024 - <span>GALAXIETS</span> All Rights Reserved.
+      </p>
+    
+    
+    <script src="script.js"></script>
+   
+    
+    </main>
+    </body>
+    
+    </html>
+    
+      
+
+   
+    
+
