@@ -5,7 +5,7 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Dashboard</title>
+    <title>Commerical Tracker</title>
     <link rel="stylesheet" href="style1.css" />
     <link rel="stylesheet" href="style.css">
     <!-- Boxicons CSS -->
@@ -427,7 +427,7 @@ function generateQuotation() {
 
     QuotationContent += `
         <h3 style="color: red;" class="calibri-font flex-container">
-          <span class="logo" style="margin-right: 10px; float: left;"><img src="new_logo.png" height="55" width="55"></span>
+          <span class="logo" style="margin-right: 10px; float: left;"><img src="../images/new_logo.png" height="55" width="55"></span>
 <br>
           <span class="logo-container" style="display:flex; align-items:center;">Galaxi Engineering Technology Services Private Limited</span>
         <div class="invoice-container2">
@@ -470,7 +470,7 @@ function generateQuotation() {
 
     // Quotation items
     QuotationContent += `
-        <br>
+        
         <table>
         <thead>
             <tr>
@@ -518,7 +518,7 @@ function generateQuotation() {
 
     // Quotation total
     QuotationContent += `
-        <br>
+        
         <h3 class="right">Total Amount: Rs. ${totalAmount.toFixed(2)}</h3>
     `;
 
@@ -550,9 +550,9 @@ function generateQuotation() {
          // Define additionalText within the function
          const initialContent = `
         <div style="margin-top: 20px; font-family: Arial, sans-serif; color: #333; font-size: 14px;">
-            <p>Quotation prepared by: <strong>Mr. Sundareshwaran N</strong></p><br><br><br>
+            <p>Quotation prepared by: <strong>Mr. Sundareshwaran N</strong></p><br>
             <p>This is a quotation on the goods named, subject to the conditions noted below:Describe any conditions pertaining to these prices and any additional terms of the agreement. You may want to include contingencies that will affect the quotation.</p>
-           <br><br>
+           
             <p><strong>Terms & Conditions:</strong></p>
             <ul style="list-style-type: disc; margin-left: 20px;">
                 <li>The following Terms and Conditions of Service apply to all products and services provided by Galaxi Engineering Technology Services Private Limited (hereinafter referred to as Galaxi ETS) and in the event of any dispute are governed by the laws of India.</li>
@@ -560,7 +560,7 @@ function generateQuotation() {
                 <li>Copyright is retained by Galaxi ETS on all design work including words, pictures, ideas, visuals and illustrations unless specifically released in writing and after all costs have been settled.</li>
                 <li>If a choice of design is presented and one is chosen for your project, only that solution is deemed to be given by us as fulfilling the contract. All other designs remain the property of Galaxi ETS, unless specifically agreed in writing.</li>
             </ul>
-            <br><br><br>
+            
             <p><strong>Project Acceptance:</strong></p>
             <ul style="list-style-type: disc; margin-left: 20px;">
                 <li>At the time of proposal, Galaxi ETS will provide the customer with a written estimate or quotation by email. These Terms and Conditions can be read at any time on the Galaxi ETS Quote.</li>
@@ -568,7 +568,7 @@ function generateQuotation() {
                 <li>Alternatively, the client may send an official purchase order in reply to the estimate or quotation which binds the client to accept our terms and conditions, or an email acknowledging acceptance of the quotation.</li>
                 <li>For the avoidance of doubt, the Galaxi ETS Terms & Conditions are what govern the job, not any conditions on the customer’s purchase</li>
             </ul>
-           <br>
+           
         </div>
     `;
     QuotationElement.insertAdjacentHTML('beforeend', initialContent);
@@ -579,7 +579,7 @@ function generateQuotation() {
     
 // Create additional text for the second page
 const additionalTextPage2 = `
-<br><br><br><br>
+
 <!-- Additional HTML content for the second page -->
 <div style="page-break-before: always; font-family: Arial, sans-serif; color: #333; font-size: 14px;">
 <div class="Quotation-container1">
@@ -609,24 +609,24 @@ const additionalTextPage2 = `
     
         <!-- Additional text for the second page -->
             
-              <br>
+              
                 <p><strong>Design Charges</strong></p>
                 <ul style="list-style-type: disc; margin-left: 20px;">
                     <li>Charges for design services to be provided by Galaxi ETS will be set out in the written estimate or quotation that is provided to the customer. At the time of the customer’s signed acceptance of this estimate or quotation, indicating acceptance of the Terms & Conditions, a non-refundable payment of 50% of the quoted fee will become immediately due.</li>
                     <li>Unless agreed otherwise with the Client, all design services require an advance payment of a minimum of fifty (50) percent of the project quotation total before the work commences or is supplied to the Client for review. The remaining fifty (50) percent of the project quotation total will be due upon completion of the work prior to upload to the server or release of materials.</li>
                 </ul>
-                <br>
+                
                 <p><strong>Source Files</strong></p>
                 <ul style="list-style-type: disc; margin-left: 20px;">
                   <li>	We will supply proofs and PDF files as appropriate for printing, or other graphic files as detailed in the job scope or request.</li>
                   <li>	Charges for design work do not cover the release of our copyright design source files, including but not restricted to indd, psd, AI, png, fla or other source files or raw code; if the Client requires these files for transfer to an in-house or other designer, they will be subject to a separate quotation or ‘buy-out’ charge.</li>
                   </ul>
-                  <br><br>
+                  
                   <p><strong>Charges for Other Services</strong></p>
                 <ul style="list-style-type: disc; margin-left: 20px;">
                   <li>	Charges for any additional services requested during the project that are over and above the estimated time or out of scope, will become fully payable (100% of the quoted amount) at the time of estimate or quotation acceptance.</li>
                   </ul>
-                  <br><br>
+                  
                   <p><strong>Payment</strong></p>
                 <ul style="list-style-type: disc; margin-left: 20px;">
                   <li>	The customer will be provided with an Approval Form or Proof Email, and an Invoice prior to final publication. At this time the remainder of the amount due will become payable and the customer will also be required to sign and return the Approval Form or signify approval by email to Galaxi ETS</li>
@@ -635,13 +635,13 @@ const additionalTextPage2 = `
                   <li>	Payments made by cheque must be previously agreed and may be subject to an administration charge. Cheques should not be sent in regular mail unless sent recorded delivery.</li>
                   <li>	Publication and/or release of work done by Galaxi ETS on behalf of the client, may not take place before cleared funds have been received.</li>
                   </ul>
-                  <br><br>
+                  
                   <p><strong>Design Project Duration</strong></p>
                 <ul style="list-style-type: disc; margin-left: 20px;">
                   <li>	Any indication given by Galaxi ETS of a design project’s duration is to be considered by the customer to be an estimation. Galaxi ETS
 cannot be held responsible for any project over-runs, whatever the cause. Estimated project duration should be deemed to be from the date that cleared funds are received by Galaxi ETS for the initial payment or by date confirmed in writing by Galaxi ETS.</li>
                    </ul>
-                   <br><br>
+                   
                    <p><strong>Cancellation</strong></p>
                 <ul style="list-style-type: disc; margin-left: 20px;">
                   <li>	Cancellation of orders may be made initially by telephone contact, or e-mail, however, following this, Galaxi ETS will need formal
@@ -649,8 +649,7 @@ notification in writing to the company’s postal address. The client will then 
 </li>
 
 </ul>
-<br> 
-<br>
+
 <div style="text-align: center;">
     <p><strong>Looking forward for your business</strong></p>
 </div>

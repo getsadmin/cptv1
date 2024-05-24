@@ -1,4 +1,4 @@
-const shrink_btn = document.querySelector(".shrink-btn");
+//const shrink_btn = document.querySelector(".shrink-btn");
 const search = document.querySelector(".search");
 const sidebar_links = document.querySelectorAll(".sidebar-links a");
 const active_tab = document.querySelector(".active-tab");

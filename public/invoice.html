@@ -5,7 +5,7 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Dashboard</title>
+    <title>Commerical Tracker</title>
     <link rel="stylesheet" href="style1.css" />
     <link rel="stylesheet" href="style.css">
     <!-- Boxicons CSS -->
@@ -410,7 +410,7 @@ const workingdate = document.querySelector('input[placeholder="Enter working dat
         invoiceContent += `
         
         <h3 style="color: red;" class="calibri-font flex-container">
-      <span class="logo" style="margin-bottom: 100px;"><img src="new_logo.png" height="55" width="55"></span>Galaxi Engineering Technology Services Private Limited
+      <span class="logo" style="margin-bottom: 100px;"><img src="../images/new_logo.png" height="55" width="55"></span>Galaxi Engineering Technology Services Private Limited
       <div class="right-column1">
         <p class="tax">TAX INVOICE</p>
   </h3>
@@ -469,7 +469,7 @@ Tax</p>
 
         // Invoice items
         invoiceContent += `
-        <br>
+        
           <h3>Invoice Items</h3>
           <br>
           <table>
@@ -519,7 +519,7 @@ Tax</p>
 
         // Invoice total
         invoiceContent += `
-        <br>
+        
           <h3 class="right">Total Amount: Rs. ${totalAmount.toFixed(2)}</h3>
         `;
 
